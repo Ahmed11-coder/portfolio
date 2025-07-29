@@ -1,0 +1,110 @@
+@keyframes morphGradient {
+    0% {
+        transform: translate(388px, 386.5px) rotate(91.0878deg) scale(553.1, 553.1);
+    }
+    12.5% {
+        transform: translate(450px, 320px) rotate(120deg) scale(700, 400);
+    }
+    25% {
+        transform: translate(500px, 380px) rotate(150deg) scale(600, 600);
+    }
+    37.5% {
+        transform: translate(450px, 450px) rotate(60deg) scale(400, 800);
+    }
+    50% {
+        transform: translate(300px, 500px) rotate(30deg) scale(750, 350);
+    }
+    62.5% {
+        transform: translate(250px, 400px) rotate(0deg) scale(500, 700);
+    }
+    75% {
+        transform: translate(320px, 300px) rotate(180deg) scale(650, 450);
+    }
+    87.5% {
+        transform: translate(400px, 250px) rotate(210deg) scale(480, 750);
+    }
+    100% {
+        transform: translate(388px, 386.5px) rotate(91.0878deg) scale(553.1, 553.1);
+    }
+}
+
+@keyframes colorShift1 {
+    0% { stop-color: #D3FF94; }
+    14% { stop-color: #C8FF89; }
+    28% { stop-color: #BDFF7E; }
+    42% { stop-color: #B2FF73; }
+    56% { stop-color: #A7FF68; }
+    70% { stop-color: #B8FF7A; }
+    84% { stop-color: #E8FFAA; }
+    100% { stop-color: #D3FF94; }
+}
+
+@keyframes colorShift2 {
+    0% { stop-color: #D3FF94; }
+    16% { stop-color: #E0FFA1; }
+    32% { stop-color: #EFFFB0; }
+    48% { stop-color: #C3FF85; }
+    64% { stop-color: #A7FF68; }
+    80% { stop-color: #BDFF7E; }
+    100% { stop-color: #D3FF94; }
+}
+
+@keyframes colorShift3 {
+    0% { stop-color: #7BC262; }
+    20% { stop-color: #85C96C; }
+    40% { stop-color: #6AB854; }
+    60% { stop-color: #5BAE46; }
+    80% { stop-color: #8FC766; }
+    100% { stop-color: #7BC262; }
+}
+
+@keyframes pathFlow {
+    0% {
+        d: path("M128.13 -5C118.427 50.2471 111.066 176.512 159.247 239.594C219.473 318.447 325.873 465.103 591.37 492.726C856.868 520.35 749.464 932.694 591.37 938.721C433.276 944.748 258.953 992.358 225.327 1024H759V-5H128.13Z");
+    }
+    16% {
+        d: path("M140.13 -5C130.427 58.2471 125.066 190.512 175.247 255.594C240.473 340.447 350.873 485.103 620.37 515.726C890.868 545.35 780.464 955.694 620.37 962.721C460.276 969.748 280.953 1015.358 245.327 1024H759V-5H140.13Z");
+    }
+    32% {
+        d: path("M115.13 -5C105.427 42.2471 95.066 160.512 140.247 220.594C195.473 295.447 295.873 440.103 560.37 465.726C825.868 490.35 715.464 905.694 560.37 910.721C405.276 915.748 235.953 965.358 200.327 1024H759V-5H115.13Z");
+    }
+    48% {
+        d: path("M135.13 -5C125.427 55.2471 120.066 185.512 170.247 250.594C235.473 330.447 340.873 475.103 610.37 505.726C880.868 535.35 770.464 945.694 610.37 952.721C450.276 959.748 275.953 1005.358 240.327 1024H759V-5H135.13Z");
+    }
+    64% {
+        d: path("M120.13 -5C110.427 48.2471 108.066 170.512 155.247 235.594C215.473 310.447 315.873 455.103 585.37 485.726C855.868 515.35 745.464 925.694 585.37 932.721C425.276 939.748 250.953 985.358 215.327 1024H759V-5H120.13Z");
+    }
+    80% {
+        d: path("M132.13 -5C122.427 53.2471 117.066 182.512 167.247 247.594C232.473 325.447 337.873 470.103 607.37 500.726C877.868 530.35 767.464 940.694 607.37 947.721C447.276 954.748 272.953 1000.358 237.327 1024H759V-5H132.13Z");
+    }
+    100% {
+        d: path("M128.13 -5C118.427 50.2471 111.066 176.512 159.247 239.594C219.473 318.447 325.873 465.103 591.37 492.726C856.868 520.35 749.464 932.694 591.37 938.721C433.276 944.748 258.953 992.358 225.327 1024H759V-5H128.13Z");
+    }
+}
+
+@keyframes opacityPulse {
+    0%, 100% { opacity: 0.9; }
+    50% { opacity: 0.7; }
+}
+
+.animated-gradient {
+    animation: morphGradient 15s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    transform-origin: 0 0;
+}
+
+.animated-path {
+    animation: pathFlow 14s cubic-bezier(0.45, 0, 0.55, 1) infinite,
+            opacityPulse 6s ease-in-out infinite;
+}
+
+.color-stop-1 {
+    animation: colorShift1 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.color-stop-2 {
+    animation: colorShift2 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite 2s;
+}
+
+.color-stop-3 {
+    animation: colorShift3 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite 1s;
+}
