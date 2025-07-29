@@ -1,6 +1,8 @@
 import React from 'react'
-import Mesh1 from './Mesh1'
-import Mesh2 from './Mesh2'
+
+import Mesh1 from './components/Mesh-Gradients/Mesh1'
+import Mesh2 from './components/Mesh-Gradients/Mesh2'
+import CutstomScrollbar from './components/Scrollbar/CutstomScrollbar'
 
 export default function Background({Content}: {Content: React.ReactNode}) {
     return (
@@ -12,6 +14,9 @@ export default function Background({Content}: {Content: React.ReactNode}) {
                 {Content}
             </div>
             <Mesh2 />
+            <span className='absolute top-64 -right-12 z-2 -rotate-90 text-[1rem] tracking-wide'>ahmedhashem2158@gmail.com</span>
+            <hr className='absolute rounded-full bottom-16 left-16 w-0.5 h-48 bg-[#EDFED6] z-2'/>
+            <CutstomScrollbar />
         </div>
     )
 }
