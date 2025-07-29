@@ -1,5 +1,5 @@
-import Header from '@/ui/Header';
-import Background from '@/ui/Background/Background';
+import Header from '@/components/layouts/Header';
+import Background from '@/components/layouts/Background/Background';
 
 export default function Home() {
   return (

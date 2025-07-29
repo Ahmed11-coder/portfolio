@@ -14,7 +14,7 @@ export default function Background({Content}: {Content: React.ReactNode}) {
                 {Content}
             </div>
             <Mesh2 />
-            <span className='absolute top-64 -right-8 z-2 -rotate-90 text-sm tracking-wide'>ahmedhashem2158@gmail.com</span>
+            <span className='absolute font-light top-60 -right-10 z-2 -rotate-90 text-sm tracking-wide'>ahmedhashem2158@gmail.com</span>
             <hr className='absolute rounded-full bottom-16 left-16 w-0.5 h-48 bg-[#EDFED6] z-2'/>
             <CutstomScrollbar />
         </div>
