@@ -6,7 +6,7 @@ import CutstomScrollbar from './components/Scrollbar/CutstomScrollbar'
 
 export default function Background({Content}: {Content: React.ReactNode}) {
     return (
-        <div className='w-[100dvw] h-[100dvh] absolute bg-size-[64px_64px] bg-[linear-gradient(to_right,#00000015_1px,transparent_1px),linear-gradient(to_bottom,#00000015_1px,transparent_1px)]'>
+        <div className='w-[100dvw] h-[100dvh] absolute bg-size-[64px_64px] bg-[linear-gradient(to_right,#7BC26230_1px,transparent_1px),linear-gradient(to_bottom,#7BC26230_1px,transparent_1px)]'>
             <div className='w-full h-full absolute bg-[radial-gradient(transparent_0%,white_55%)]'>
             </div>
             <Mesh1 />
@@ -14,7 +14,7 @@ export default function Background({Content}: {Content: React.ReactNode}) {
                 {Content}
             </div>
             <Mesh2 />
-            <span className='absolute top-64 -right-12 z-2 -rotate-90 text-[1rem] tracking-wide'>ahmedhashem2158@gmail.com</span>
+            <span className='absolute top-64 -right-8 z-2 -rotate-90 text-sm tracking-wide'>ahmedhashem2158@gmail.com</span>
             <hr className='absolute rounded-full bottom-16 left-16 w-0.5 h-48 bg-[#EDFED6] z-2'/>
             <CutstomScrollbar />
         </div>
