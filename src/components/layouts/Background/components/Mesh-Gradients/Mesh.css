@@ -175,8 +175,7 @@
             opacityPulse 6s ease-in-out infinite;
 }
 .animated-path2 {
-    animation: pathMorph2 18s cubic-bezier(0.45, 0, 0.55, 1) infinite,
-            opacityPulse 6s ease-in-out infinite;
+    animation: pathMorph2 18s cubic-bezier(0.45, 0, 0.55, 1) infinite;
 }
 
 .color-stop-1 {
