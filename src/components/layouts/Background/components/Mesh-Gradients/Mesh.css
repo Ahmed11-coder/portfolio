@@ -1,4 +1,4 @@
-@keyframes morphGradient {
+@keyframes morphGradient1 {
     0% {
         transform: translate(388px, 386.5px) rotate(91.0878deg) scale(553.1, 553.1);
     }
@@ -25,6 +25,42 @@
     }
     100% {
         transform: translate(388px, 386.5px) rotate(91.0878deg) scale(553.1, 553.1);
+    }
+}
+
+@keyframes morphGradient2 {
+    0% {
+        transform: translate(227.5px, 478.5px) rotate(129.596deg) scale(262.797, 185.535);
+    }
+    10% {
+        transform: translate(280px, 420px) rotate(160deg) scale(350, 120);
+    }
+    20% {
+        transform: translate(320px, 480px) rotate(200deg) scale(300, 280);
+    }
+    30% {
+        transform: translate(300px, 520px) rotate(90deg) scale(180, 350);
+    }
+    40% {
+        transform: translate(200px, 550px) rotate(50deg) scale(400, 140);
+    }
+    50% {
+        transform: translate(150px, 480px) rotate(10deg) scale(250, 320);
+    }
+    60% {
+        transform: translate(120px, 420px) rotate(-30deg) scale(350, 200);
+    }
+    70% {
+        transform: translate(180px, 380px) rotate(70deg) scale(280, 280);
+    }
+    80% {
+        transform: translate(250px, 360px) rotate(110deg) scale(200, 380);
+    }
+    90% {
+        transform: translate(280px, 400px) rotate(150deg) scale(320, 240);
+    }
+    100% {
+        transform: translate(227.5px, 478.5px) rotate(129.596deg) scale(262.797, 185.535);
     }
 }
 
@@ -58,7 +94,7 @@
     100% { stop-color: #7BC262; }
 }
 
-@keyframes pathFlow {
+@keyframes pathFlow1 {
     0% {
         d: path("M128.13 -5C118.427 50.2471 111.066 176.512 159.247 239.594C219.473 318.447 325.873 465.103 591.37 492.726C856.868 520.35 749.464 932.694 591.37 938.721C433.276 944.748 258.953 992.358 225.327 1024H759V-5H128.13Z");
     }
@@ -82,18 +118,64 @@
     }
 }
 
+
+@keyframes pathMorph2 {
+    0% {
+        d: path("M170.383 410.552C164.887 247.143 41.4336 142.368 -13 121V793H488C410.313 757.689 177.253 614.814 170.383 410.552Z");
+    }
+    10% {
+        d: path("M180.383 420.552C174.887 257.143 51.4336 152.368 -3 131V793H488C400.313 767.689 187.253 624.814 180.383 420.552Z");
+    }
+    20% {
+        d: path("M160.383 400.552C154.887 237.143 31.4336 132.368 -23 111V793H488C420.313 747.689 167.253 604.814 160.383 400.552Z");
+    }
+    30% {
+        d: path("M185.383 430.552C179.887 267.143 56.4336 162.368 2 141V793H488C395.313 777.689 192.253 634.814 185.383 430.552Z");
+    }
+    40% {
+        d: path("M155.383 390.552C149.887 227.143 26.4336 122.368 -28 101V793H488C425.313 737.689 162.253 594.814 155.383 390.552Z");
+    }
+    50% {
+        d: path("M175.383 415.552C169.887 252.143 46.4336 147.368 -8 126V793H488C405.313 762.689 182.253 619.814 175.383 415.552Z");
+    }
+    60% {
+        d: path("M165.383 405.552C159.887 242.143 36.4336 137.368 -18 116V793H488C415.313 752.689 172.253 609.814 165.383 405.552Z");
+    }
+    70% {
+        d: path("M190.383 435.552C184.887 272.143 61.4336 167.368 7 146V793H488C390.313 782.689 197.253 639.814 190.383 435.552Z");
+    }
+    80% {
+        d: path("M160.383 395.552C154.887 232.143 31.4336 127.368 -23 106V793H488C420.313 742.689 167.253 599.814 160.383 395.552Z");
+    }
+    90% {
+        d: path("M178.383 418.552C172.887 255.143 49.4336 150.368 -6 129V793H488C402.313 765.689 185.253 622.814 178.383 418.552Z");
+    }
+    100% {
+        d: path("M170.383 410.552C164.887 247.143 41.4336 142.368 -13 121V793H488C410.313 757.689 177.253 614.814 170.383 410.552Z");
+    }
+}
+
 @keyframes opacityPulse {
     0%, 100% { opacity: 0.9; }
     50% { opacity: 0.7; }
 }
 
-.animated-gradient {
-    animation: morphGradient 15s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+.animated-gradient1 {
+    animation: morphGradient1 20s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     transform-origin: 0 0;
 }
 
-.animated-path {
-    animation: pathFlow 14s cubic-bezier(0.45, 0, 0.55, 1) infinite,
+.animated-gradient2 {
+    animation: morphGradient2 20s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    transform-origin: 0 0;
+}
+
+.animated-path1 {
+    animation: pathFlow1 14s cubic-bezier(0.45, 0, 0.55, 1) infinite,
+            opacityPulse 6s ease-in-out infinite;
+}
+.animated-path2 {
+    animation: pathMorph2 18s cubic-bezier(0.45, 0, 0.55, 1) infinite,
             opacityPulse 6s ease-in-out infinite;
 }
 
