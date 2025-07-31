@@ -1,10 +1,12 @@
 import Header from '@/components/layouts/Header';
-import Background from '@/components/layouts/Background/Background';
+import Leading from '@/components/layouts/Leading/Leading';
+import Info from '@/components/layouts/Info';
 
 export default function Home() {
   return (
-    <div>
-      <Background Content={<Header />} />
+    <div className='w-[calc(100%-5rem)] h-[calc(100%-5rem)] relative'>
+      <Header />
+      <Leading Content={<Info />} />
     </div>
   );
 }
