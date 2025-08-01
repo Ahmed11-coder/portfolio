@@ -4,3 +4,10 @@ export interface Link {
     labelColor: string;
     size?: number;
 }
+
+export interface Button {
+    href: string;
+    label: string;
+    color?: string;
+    animation?: string;
+}
