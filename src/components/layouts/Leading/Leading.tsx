@@ -12,7 +12,7 @@ export default function Background({Content}: {Content: React.ReactNode}) {
             <div className='w-full h-full absolute bg-[radial-gradient(transparent_0%,white_55%)]'>
             </div>
             <Mesh1 />
-            <div className="w-[calc(100%-5rem)] h-[calc(100%-5rem)] relative rounded-[50px] border-[3px] border-[#EDFED6] m-10">
+            <div className="w-[calc(100%-5rem)] h-[calc(100%-5rem)] relative rounded-[50px] border-[3px] border-main m-10">
                 <div className='absolute top-0 left-0 w-full h-full p-10 z-2'>
                     {Content}
                 </div>
@@ -23,7 +23,7 @@ export default function Background({Content}: {Content: React.ReactNode}) {
                 </div>
             </div>
             <Mesh2 />
-            <hr className='absolute rounded-full bottom-16 left-16 w-0.5 h-48 bg-[#EDFED6] z-2'/>
+            <hr className='absolute rounded-full bottom-16 left-16 w-0.5 h-48 bg-main z-2'/>
             <CutstomScrollbar />
         </div>
     )
